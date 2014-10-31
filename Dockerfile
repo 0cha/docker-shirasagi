@@ -14,7 +14,7 @@ RUN yum update -y
 #RUN ./rvm_install.sh
 #RUN /bin/bash -l -c "curl -L https://get.rvm.io | bash -s stable"
 RUN /bin/bash -l -c "curl -sSL https://get.rvm.io | bash -s stable --ruby"
-RUN /bin/bash -l -c "rvm install 2.1.1"
+RUN /bin/bash -l -c "rvm install 2.1.2"
 
 # Install MongoDB
 ADD ./10gen.txt /
